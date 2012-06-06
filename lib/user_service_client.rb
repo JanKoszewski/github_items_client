@@ -30,7 +30,7 @@ module UserService
 
       resp = @conn.get do |req|
         req.url "#{@path_prefix}/api/v1/users.json"
-        # req.params["token"] = @token
+        req.params["token"] = @token
         req.params["body"] = JSON.dump(attr_hash)
         req.headers['Content-Type'] = 'application/json'
       end
