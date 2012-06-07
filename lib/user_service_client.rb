@@ -26,7 +26,7 @@ module UserService
 
     def get_user_info
       resp = @conn.get do |req|
-        req.url "#{@path_prefix}/api/v1/users.json"
+        req.url "#{@path_prefix}/api/v1/user/1"
         req.params["token"] = @token
         req.headers['Content-Type'] = 'application/json'
       end
