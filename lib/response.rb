@@ -1,4 +1,4 @@
-module UserService
+module GithubItems
   class Response
     attr_accessor :status, :data
     

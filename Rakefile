@@ -1,6 +1,6 @@
 task :console do
   $: << File.expand_path("../lib", __FILE__)
-  require 'user_service_client'
+  require 'github_items_client'
 
   ARGV.clear
   require 'irb'
